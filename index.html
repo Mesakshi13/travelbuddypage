@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+  <title>3 best places to visit | TravelBuddy.com</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Bree+Serif&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&display=swap" rel="stylesheet"> -->
+</head>
+<style>
+  #logo {
+    width: 100px;
+    margin: 5px 15px;
+  }
+
+  #logo img {
+    width: 100%;
+
+    margin: 3px 6px;
+  }
+
+  li.item a {
+    align-items: center;
+  }
+
+  /* Navigation Bar */
+  #navbar {
+    display: flex;
+  }
+
+  #navbar {
+
+position: relative;
+width: 100%;
+ }
+
+  /* Navigation bar: List Styling */
+  #navbar ul {
+    display: flex;
+    height: 50px;
+    margin: auto;
+    font-family: 'Baloo Bhaina 2', cursive;
+  }
+
+  #navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+  }
+
+  #navbar ul li {
+
+    list-style: none;
+    font-size: 1.3rem;
+
+  }
+
+  #navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+
+  #navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+  }
+  #navbar#hamburger {
+    float: right;
+    /* height: 100px;
+    width: 100px; */
+    
+  }
+  
+
+  
+
+  /* HOME SECTION STYLING */
+  #home {
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #home::before {
+    content: "";
+    background: url("travelbg2.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+     z-index: -1;
+    opacity: 0.75; 
+  }
+
+  #home h2 {
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+  }
+
+  #home p {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+
+    font-family: 'Bree Serif', serif;
+  }
+
+.btn:hover{
+  background-color: green;
+  color: black;
+}
+/* SERVICES SECTION */
+#services {
+  
+  width: 1265px;
+  height: 900px;
+  background: url("travelbg5.jpg") no-repeat center center/cover;
+  display: flex;
+}
+  /* opacity: 0.7;
+  #services{
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+} */
+.h-primary a {
+        text-decoration: none;
+        border-radius: 10px;
+        color: black;
+        font-weight: bold;
+        font-size: 35px;
+        /* padding: 5px; */
+        text-align: center;
+        margin-left: 450px;
+        margin-top: 10px;
+        background-color: #42828d;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+#services .box{ 
+    /* border: 2px solid rgb(135, 188, 231); */
+    padding: 5px;
+    margin: 2px 2px;
+    height: 700px;
+    /* border-radius: 28px; */
+    background: none;
+    margin-bottom: 20px;
+    width: 759px;
+    justify-content: space-evenly;
+}
+
+#services .box img{ 
+   height: 350px;
+   margin: 5px;
+   display: block;
+   width: 400px;
+}
+#services .box a{
+  /* margin-top: 10px; */
+        text-decoration: none;
+        border-radius: 10px;
+        color: rgb(6, 23, 46);
+        font-weight: bold;
+        padding: 5px;
+        text-align: center;
+      
+}
+#services .box a:hover{
+
+
+
+background-color: rgb(72, 120, 153);
+        color: black;
+        width: fit-content;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+.center{
+  text-align: left;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    text-align: center;
+
+}
+
+
+
+    
+  .btn{
+  color: black;
+  padding: 6px 20px;
+  border: 2px solid black;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.center{
+  text-align:center;
+ 
+
+
+}
+
+  
+.bg {
+  width: 400px;
+    height: 300px;
+    /* margin-top: 30px; */
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px black; 
+    transition: transform .2s;
+    /* opacity: 1; */
+}
+.bg:hover {
+  
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+
+.flexbox a {
+  color: rgb(8, 8, 10);
+text-decoration: none;
+padding-right: 30px;
+padding-left: 30px;
+font-size: 40px;
+font-weight: 20px;
+border-radius: 6px;
+box-shadow: 3px 3px 5px black; 
+}
+.box a:hover {
+  background-color: rgb(29, 35, 41);
+  color: cornflowerblue;
+}
+.box p {
+  padding-left: 20p;
+  /* font-weight: bold; */
+  /* font-style: italic; */
+  /* font-family: 'Barlow Condensed', sans-serif; */
+  font-size: 19px;
+  font-family: 'Baloo Bhaina 2', cursive;
+  color: rgb(34, 31, 31);
+
+}
+ .form {
+  background-color: rgb(189, 231, 241);
+  height: 530px;
+  padding-left: 50px;
+  /* display: grid;
+  grid-template-columns: auto; */
+ }
+ 
+ input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #e7c7c7;
+  /* width: 50%; */
+  padding: 15px;
+  /* box-sizing: 500px 300px;
+   */
+   width: 600px;
+   height: 470px;
+  /* margin-bottom: 20px; */
+  position: relative;
+  margin-left: 400px;
+  /* margin-top: 20px; */
+
+ 
+}
+.container form {
+  float: left;
+}
+hr {
+  margin: 3px;
+  margin-top: 3px;
+}
+.foot ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+}
+.foot ul h5 {
+  align-items: center;
+}
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue; 
+    display: block;
+  }
+} */
+ 
+@media screen and (max-width: 1170px) {
+  /* body {
+    /* color: red; */
+
+  
+  #services {
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 0px;
+    left: 0px;
+    width: fit-content;
+  }
+  .form {
+    width: fit-content;
+    padding-left: 3px;
+  }
+  .bg {
+    
+    margin-left: 175px;
+
+  }
+  .container {
+    margin-left: 0px;
+    padding: 0px;
+    margin-right: 0px;
+    /* padding-left: 0px; */
+  }
+ 
+  
+}
+
+    
+
+</style>
+
+<body>
+  <nav id="navbar">
+    <div id="logo">
+
+      <img src="myphoto.jpg" alt="TravellingBuddy.com">
+    </div>
+    <ul>
+      <li class="item"><a href="#">Destinations</a></li>
+      <li class="item"><a href="#">My stay</a></li>
+      <li class="item"><a href="https://www.facebook.com/sakshi.suman.3705/">Facebook</a></li>
+      <li class="item"><a href="https://www.linkedin.com/feed/">Linkedin</a></li>
+
+
+    </ul>
+    <div id="hamburger"> 
+      <img src="hamburger.png" alt="ham" style="width: 100px; height: 100px; padding-right: 30px; padding-top: 30px;">
+
+    </div>
+  </nav>
+  <section id="home">
+    <h2 class="h-primary">Welcome to TravelBuddy</h2>
+<p>Up for any plans! Once the covid is over. We are here to make you explore more about different places in India.</p>
+    <p>A memory to fill your adventure wall. Unleash the inner you!</p>
+    <button class="btn">Book Now</button>
+  </section>
+
+  <services class="services-container">
+    <h2 class="h-primary"><a href="#">Our Services</a></h2>
+  <div id="services">
+    
+
+      <div class="box">
+    <img src="a.jpg " class= "bg"> 
+    <!-- <div class="placename" id="num1"> -->
+      <h2 class="h-secondary"><a href="#">KASOL</a></h2>
+    <p class="center">
+      Kasol is a hamlet in kullu district of Himachal Pradesh. A wonder to behold ,with an air which not only
+      mystifies your sense but makes you live in the impulses of life, it is a village mothered by Parvati Valley.
+      It is best known for its thrilling treks, flavoursome food, roaring river and heartfelt humanity.
+    </p>
+    </div>
+    <div class="box">
+<img src="b.jpg" class= "bg">
+<h2 class="h-secondary"><a href="#">HAMPI</a></h2>
+<p class="center">Hampi is an ancient village of karnataka. It's dotted with numerous ruined temple complexes from
+  the Vijayanagara Empire. It is declared as a World Heritage Site. The temples of Hampi, it's monolithic 
+  sculptures and monuments, attract the traveler because of their excellent workmanship. 
+
+</p></div>
+<!-- <h2><a href="#">KASOL</a></h2>
+<p>
+  Kasol is a hamlet in kullu district of Himachal Pradesh. A wonder to behold ,with an air which not only
+  mystifies your sense but makes you live in the impulses of life, it is a village mothered by Parvati Valley.
+  It is best known for its thrilling treks, flavoursome food, roaring river and heartfelt humanity.
+</p>
+</div> -->
+
+<div class="box">
+<img src="c.jpg" class= "bg">
+  
+  <!-- <div class="placename" id="num3"> -->
+    <h2 class="h-secondary"><a href="#">MCLEODGANJ</a></h2><p class="center">
+    McleodGanj is a suburb in kangra district of Himachal Pradesh. It is known for its monastries, museums, temples
+    , waterfalls , lakes and Tibetian settlements. Some interesting things to do in Mcleodganj is Trekking. Best time 
+    to visit is between October-March. A must visit place in your budget.
+  </p>
+  </div>
+
+</div>
+</services>
+
+<hr>
+  
+
+<div class="form">
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="Places">Places</label>
+      <select id="country" name="country">
+        <option value="Hampi">Hampi</option>
+        <option value="Kasol">Kasol</option>
+        <option value="Mcleodganj">Mcleodganj</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  
+    
+  </div>
+  <hr>
+
+  <div class="foot">
+    <ul>
+      <li>Terms of Use</li>
+      <li>Privacy Policy</li>
+      <li>Contact</li>
+      <li>Press</li>
+    </ul>
+    <ul>@copyright.All rights reserved. TravelBuddy. Made by Sakshi!</ul>
+    <!-- <ul>Made by sakshi</ul> -->
+  
+</div>
+
+  </div>
+
+  
+
+
+  </div>>
+</body>
+
+</html>
